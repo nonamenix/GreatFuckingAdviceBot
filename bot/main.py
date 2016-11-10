@@ -4,7 +4,7 @@ from urllib.parse import quote
 
 from aiotg import Bot, aiohttp
 
-from bot.utils import html_decode
+from utils import html_decode
 
 bot = Bot(api_token=os.environ['BOT_TOKEN'])
 advice_api_url = "http://fucking-great-advice.ru/api/{}"
