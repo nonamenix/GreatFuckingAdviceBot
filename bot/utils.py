@@ -12,6 +12,5 @@ code_mapping = (
 def html_decode(s):
     for code, escaped in code_mapping:
         s = s.replace(escaped, code)
+
     return s
-
-
