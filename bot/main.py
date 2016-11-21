@@ -2,6 +2,7 @@ import os
 from enum import Enum
 from urllib.parse import quote
 
+import sys
 from aiotg import Bot, aiohttp
 
 from utils import html_decode
@@ -69,7 +70,7 @@ async def image(chat, match):
 
 @bot.command(r'/raise')
 async def image(chat, match):
-    raise Exception
+    sys.exit()
 
 
 @bot.command(r'/sound')
