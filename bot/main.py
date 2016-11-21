@@ -70,6 +70,7 @@ async def image(chat, match):
 
 @bot.command(r'/raise')
 async def image(chat, match):
+    await chat.send_text('raised')
     sys.exit()
 
 
