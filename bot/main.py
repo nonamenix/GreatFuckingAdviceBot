@@ -67,6 +67,11 @@ async def image(chat, match):
     await chat.send_photo(photo=advice.photo_url)
 
 
+@bot.command(r'/raise')
+async def image(chat, match):
+    raise Exception
+
+
 @bot.command(r'/sound')
 async def sound(chat, match):
     await chat.send_chat_action('record_audio')
